@@ -10,8 +10,10 @@ Tablib compatiblity module.
 
 import sys
 
-is_py3 = (sys.version_info[0] > 2)
+from MarkupPy import markup
+from statistics import median
 
+is_py3 = (sys.version_info[0] > 2)
 
 if is_py3:
     from io import BytesIO
