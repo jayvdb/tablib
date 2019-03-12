@@ -32,7 +32,6 @@ else:
     from tablib.packages.statistics import median
     from itertools import izip_longest
     from backports import csv
-    import tablib.packages.dbfpy as dbfpy
 
     unicode = unicode
     xrange = xrange

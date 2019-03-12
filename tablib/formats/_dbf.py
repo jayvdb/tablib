@@ -7,18 +7,19 @@ import struct
 import os
 
 from tablib.compat import StringIO
-from tablib.compat import dbfpy
 from tablib.compat import is_py3
 
 if is_py3:
+    from tablib.compat import dbfpy
     from tablib.packages.dbfpy3 import dbf
     from tablib.packages.dbfpy3 import dbfnew
     from tablib.packages.dbfpy3 import record as dbfrecord
     import io
 else:
-    from tablib.packages.dbfpy import dbf
-    from tablib.packages.dbfpy import dbfnew
-    from tablib.packages.dbfpy import record as dbfrecord
+    import dbfpy
+    from dbfpy import dbf
+    from dbfpy import dbfnew
+    from dbfpy import record as dbfrecord
 
 
 title = 'dbf'

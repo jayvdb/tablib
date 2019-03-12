@@ -39,6 +39,7 @@ install = [
     'xlrd',
     'xlwt',
     'pyyaml',
+    'dbfpy',
 ]
 
 
